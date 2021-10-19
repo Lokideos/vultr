@@ -20,9 +20,5 @@ module Vultr
         conn.adapter adapter
       end
     end
-
-    # def inspect
-    #   "#<Vultr::Client>"
-    # end
   end
 end
