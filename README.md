@@ -24,6 +24,15 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+```ruby
+client = Vultr::Client.new(api_key: ENV["VULTR_API_KEY"])
+client.applications
+client.regions.list
+
+instance = client.instances.create({})
+instance.name
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
