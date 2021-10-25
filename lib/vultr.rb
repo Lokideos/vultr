@@ -12,7 +12,9 @@ module Vultr
   autoload :Account, "vultr/objects/account"
   autoload :Instance, "vultr/objects/account"
   autoload :Plan, "vultr/objects/plan"
+  autoload :User, 'vultr/objects/user'
 
   autoload :AccountResource, "vultr/resources/account"
   autoload :PlansResource, "vultr/resources/plans"
+  autoload :UsersResource, 'vultr/resources/users'
 end

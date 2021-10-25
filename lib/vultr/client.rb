@@ -16,10 +16,16 @@ module Vultr
       AccountResource.new(self)
     end
 
-    def applications; end
+    def applications
+      ApplicationsResource.new(self)
+    end
 
     def plans
       PlansResource.new(self )
+    end
+
+    def users
+      UsersResource.new(self)
     end
 
     def connection
